@@ -1,8 +1,8 @@
 import 'package:devcamp_recipe_app/recipes/recipes.dart';
 import 'package:flutter/material.dart';
 
-class RecipeDetailsPage extends StatelessWidget {
-  const RecipeDetailsPage({super.key, required this.recipe});
+class RecipeDetailsScreen extends StatelessWidget {
+  const RecipeDetailsScreen({super.key, required this.recipe});
 
   final Recipes recipe;
 
@@ -10,7 +10,7 @@ class RecipeDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     String stars = '';
     for (var i = 0; i < recipe.rating; i++) {
-      stars = "$stars* ";
+      stars = "$stars★ ";
     }
     return Scaffold(
       extendBody: false,
