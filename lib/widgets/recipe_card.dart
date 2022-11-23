@@ -27,7 +27,7 @@ class RecipeCard extends StatelessWidget {
             const SizedBox(height: 16),
             Row(
               children: [
-                const SizedBox(width: 50),
+                const Spacer(),
                 Hero(
                   tag: recipe.name,
                   child: CircleAvatar(
@@ -35,6 +35,7 @@ class RecipeCard extends StatelessWidget {
                     radius: 100,
                   ),
                 ),
+                const Spacer(),
               ],
             ),
             const SizedBox(height: 16),
